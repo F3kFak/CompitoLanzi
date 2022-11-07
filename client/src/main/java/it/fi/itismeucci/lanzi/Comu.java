@@ -38,7 +38,7 @@ public class Comu {
             }
         }
 
-        Messaggio m = new Messaggio(biglietti);
+        Messaggio m = new Messaggio(richiesta);
 
         String stringa = objectMapper.writeValueAsString(m);
         outVersoServer.writeBytes(stringa + '\n');
